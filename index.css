@@ -16,5 +16,18 @@
 .main-content{
     width: 85vw;
     height: 100vh;
-    background-color: aliceblue;
+}
+.main-content .about{
+    width: 100%;
+    height: auto;
+    padding-left: 1.5rem;
+    background-color: beige; 
+}
+.about h2{
+    color: rgba(14, 44, 85, 143);
+    font-size: 2rem;
+}
+.about .IT{
+    color: rgb(0, 38, 78);
+    font-size: 1.5rem;
 }
