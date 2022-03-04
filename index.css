@@ -8,10 +8,13 @@
     box-sizing: border-box;
 }
 body{
-    padding: 40px;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
-    width: 93vw;
+    width: 89vw;
     height: auto;
     display: flex;
     font-family: 'Poppins', sans-serif;
