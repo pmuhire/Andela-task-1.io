@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 :root{
   --color: #0f2d55;
 }
@@ -13,13 +14,14 @@ body{
     width: 93vw;
     height: auto;
     display: flex;
-    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.4rem; */
     border: 1px solid #d4d6d6;
     border-radius: 10px;
 }
 .sidebar{
     width: 15vw;
-    height: 155vh;
+    height: 170vh;
     background-color: var(--color);
     position: relative;
     border-radius: 10px;
@@ -30,24 +32,25 @@ body{
 .sidebar .pmp,
 .sidebar .present{
     position: absolute;
-    left: 3vw;
+    left: 1vw;
     color: #fff;
     font-size: 20px;
 }
 .junior{
-    top: 65vh;
+    top: 72vh;
 }
 .senior{
-    top: 96vh;
+    top: 100vh;
 }
 .bs{
-    bottom: 8vh;
+    bottom: 5vh;
+    /* left: 2vw; */
 }
 .pmp{
-    bottom: 4vh;
+    bottom: 1vh;
 }
 .present{
-    top: 39vh;
+    top: 45vh;
 }
 .main-content{
     width: 85vw;
@@ -66,6 +69,7 @@ body{
 .about .description{
     width: 95%;
     font-size: 18px;
+    margin-left: 10px;
 }
 .about p span{
     font-weight: 600;
@@ -83,8 +87,31 @@ body{
     width: 100%;
     display: flex;
 }
-.social-media div div span{
+.social-media .second .twitter div,
+.social-media .second .email div,
+.social-media .first .linked-in div,
+.social-media .first .call div{
+    position: absolute;
+    width: 40%;
     font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.call div{
+    left: 3vw;
+    top: 0.5vh;
+}
+.linked-in div{
+    left: 27vw;
+    top: 0.5vh;
+}
+.email div{
+    top: 6vh;
+    left: 3vw;
+}
+.twitter div{
+    top: 6vh;
+    left: 27vw;
 }
 .social-media div div{
     width: 30%;
@@ -208,6 +235,16 @@ body{
 .certifications .two{
     bottom: 1vh;
 }
+.education .circle{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    position: absolute;
+    left: -0.5vw;
+    top: 64vh;
+}
+
 .skills ul li span{
     font-weight: 700;
 }
