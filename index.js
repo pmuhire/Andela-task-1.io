@@ -1,11 +1,7 @@
 const name = document.getElementById("name");
 
 function createRandomColor(){
-    let max = 0xFFFFFF;
-    let randomNumber = Math.random() * max;
-    randomNumber = Math.floor(randomNumber);
-    randomNumber = randomNumber.toString(16);
-    let randomColor = randomNumber.padStart(6, 0);
+    let randomColor=Math.floor(Math.random()*16777215).toString(16);
     return `#${randomColor.toUpperCase()}`
 }
 
