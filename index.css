@@ -1,17 +1,53 @@
+:root{
+  --color: #0f2d55;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding: 40px;
+}
 .container{
-    width: 100vw;
+    width: 93vw;
     height: auto;
     display: flex;
+    font-size: 1.2rem;
+    border: 1px solid #d4d6d6;
+    border-radius: 10px;
 }
 .sidebar{
     width: 15vw;
-    height: 100vh;
-    background-color: dodgerblue;
+    height: 155vh;
+    background-color: var(--color);
+    position: relative;
+    border-radius: 10px;
+}
+.sidebar .junior,
+.sidebar .senior,
+.sidebar .bs,
+.sidebar .pmp,
+.sidebar .present{
+    position: absolute;
+    left: 3vw;
+    color: #fff;
+    font-size: 20px;
+}
+.junior{
+    top: 65vh;
+}
+.senior{
+    top: 96vh;
+}
+.bs{
+    bottom: 8vh;
+}
+.pmp{
+    bottom: 4vh;
+}
+.present{
+    top: 39vh;
 }
 .main-content{
     width: 85vw;
@@ -20,14 +56,158 @@
 .main-content .about{
     width: 100%;
     height: auto;
-    padding-left: 1.5rem;
-    background-color: beige; 
+    margin-left: 1.5rem;
 }
 .about h2{
-    color: rgba(14, 44, 85, 143);
+    color: var(--color);
     font-size: 2rem;
+    cursor: pointer;
+}
+.about .description{
+    width: 95%;
+    font-size: 18px;
+}
+.about p span{
+    font-weight: 600;
+}
+.about .social-media{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.social-media .first{
+    width: 100%;
+    display: flex;
+}
+.social-media .second{
+    width: 100%;
+    display: flex;
+}
+.social-media div div span{
+    font-size: 1.2rem;
+}
+.social-media div div{
+    width: 30%;
 }
 .about .IT{
-    color: rgb(0, 38, 78);
+    color: var(--color);
     font-size: 1.5rem;
+}
+.container .cv{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 1.5rem;
+    border-left: 2px solid #eee;
+    position: relative;
+}
+.cv .education,
+.cv .skills,
+.cv .certifications,
+.cv .software,
+.cv .experience{
+    margin-left: 2.5rem;
+}
+.cv h2{
+    color: var(--color);
+}
+.cv .circle1{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    position: absolute;
+    left: -.3rem;
+    top: 3rem;
+}
+.cv .circle2{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    position: absolute;
+    left: -.3rem;
+    top: 13.5rem;
+}
+.cv .rating{
+    display: flex;
+    position: absolute;
+    right: 3vw;
+}
+.cv .text{
+    position: absolute;
+    right: 3vw;
+    margin-top: 10px;
+}
+.cv .software .blue{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    margin-left: 2px;
+}
+.cv .software .gray{
+    width: 10px;
+    height: 10px;
+    background: #868686;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+.software .mp{
+    padding: 10px;
+}
+.software .ms{
+    padding: 5px;
+}
+.svg-icon{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: -1rem;
+}
+.cv .experience ul,
+.cv .education ul{
+    list-style: circle;
+}
+.cv .skills ul{
+    list-style: none;
+}
+.skills .circle{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    position: absolute;
+    left: -0.5vw;
+}
+.ms .circle,
+.mp .circle{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    position: absolute;
+    left: -0.5vw;  
+    /* top: 1vh;  */
+}
+.certifications .circle{
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    position: absolute;
+    left: -0.5vw;
+}
+.certifications .one{
+    bottom: 4.5vh;
+}
+.certifications .two{
+    bottom: 1vh;
+}
+.skills ul li span{
+    font-weight: 700;
 }
